@@ -1,4 +1,7 @@
 from typing import List
+from random import randint 
+
+
 
 def merge(a: List, l: int, m: int, r: int):
     L =[a[i] for i in range(l, m)]
@@ -26,7 +29,11 @@ def merge_sort(a, l, r):
         merge(a, l, q, r)
 
 
+
+
 if __name__ == '__main__':
-    lisa = [5, 12, 6, 7, 9, 10, 12, 111, 7, 24, 23, 15, 17, 16]
-    merge_sort(a=lisa, l=0, r=14)
+    lisa = [randint(0, 100) for j in range(40)]
+    merge_sort(a=lisa, l=0, r=40)
     print(lisa)
+    a = 10
+    print(a)
